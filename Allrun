@@ -1,0 +1,8 @@
+#!/bin/sh
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+runApplication surfaceFeatureEdges constant/triSurface/foilInBox.stl constant/triSurface/foilInBoxFeatureEdges.stl
+runApplication cartesianMesh
+runApplication createPatch -overwrite
+runApplication checkMesh

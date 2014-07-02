@@ -1,0 +1,57 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                |
+| \\      /  F ield         | cfMesh: A library for mesh generation          | 
+|  \\    /   O peration     |                                                |
+|   \\  /    A nd           | Author: Franjo Juretic                         | 
+|    \\/     M anipulation  | E-mail: franjo.juretic@c-fields.com            |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version   2.0;
+    format    ascii;
+    class     dictionary;
+    location  "system";
+    object    meshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+surfaceFile "constant/triSurface/foilInBoxFeatureEdges.stl";
+
+maxCellSize 0.05;
+
+boundaryCellSize 0.05;
+
+
+localRefinement
+{
+    foilInBox_6 // foil surface
+    {
+        cellSize 0.005;
+    }
+    foilInBox_7 // foil top
+    {
+        cellSize 0.005;
+    }
+    foilInBox_8 // foil bottom
+    {
+        cellSize 0.005;
+    }
+}
+
+boundaryLayers
+{
+    //nLayers	5;
+
+    patchBoundaryLayers
+    {
+        foilInBox_6
+        {
+             nLayers	10;
+             thicknessRatio	1.25;
+        }
+    }
+}
+
+// ************************************************************************* //
