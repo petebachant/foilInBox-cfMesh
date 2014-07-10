@@ -18,3 +18,4 @@ This tutorial demonstrates meshing an external geometry--an airfoil--using
 | `foilInBox_6` |     Foil surface   |
 | `foilInBox_7` |     Foil top       |
 | `foilInBox_8` |     Foil bottom    |
+| `foilInBox_9` |     Foil trailing edge    |
