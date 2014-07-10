@@ -19,24 +19,24 @@ FoamFile
 
 surfaceFile "constant/triSurface/foilInBoxFeatureEdges.stl";
 
-maxCellSize 0.05;
+maxCellSize 0.01;
 
-boundaryCellSize 0.05;
+boundaryCellSize 0.01;
 
 
 localRefinement
 {
     foilInBox_6 // foil surface
     {
-        cellSize 0.005;
+        cellSize 0.002;
     }
     foilInBox_7 // foil top
     {
-        cellSize 0.005;
+        cellSize 0.002;
     }
     foilInBox_8 // foil bottom
     {
-        cellSize 0.005;
+        cellSize 0.002;
     }
 }
 
