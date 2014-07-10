@@ -49,7 +49,7 @@ boundaryLayers
         foilInBox_6
         {
              nLayers	10;
-             thicknessRatio	1.25;
+             thicknessRatio	1.1;
         }
     }
 }
