@@ -19,9 +19,9 @@ FoamFile
 
 surfaceFile "constant/triSurface/foilInBoxFeatureEdges.stl";
 
-maxCellSize 0.01;
+maxCellSize 0.05;
 
-boundaryCellSize 0.01;
+boundaryCellSize 0.05;
 
 
 localRefinement
@@ -38,6 +38,10 @@ localRefinement
     {
         cellSize 0.002;
     }
+    foilInBox_9 // foil trailing edge
+    {
+        cellSize 0.002;
+    }
 }
 
 boundaryLayers
@@ -48,7 +52,12 @@ boundaryLayers
     {
         foilInBox_6
         {
-             nLayers	10;
+             nLayers	5;
+             thicknessRatio	1.1;
+        }
+        foilInBox_9
+        {
+             nLayers	5;
              thicknessRatio	1.1;
         }
     }
