@@ -9,4 +9,5 @@
 . $WM_PROJECT_DIR/bin/tools/CleanFunctions
 
 cleanCase
-rm -r constant/polyMesh
+rm -rf constant/polyMesh
+rm -f constant/triSurface/foilInBoxFeatureEdges.stl
