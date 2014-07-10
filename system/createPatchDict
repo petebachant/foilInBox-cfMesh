@@ -95,7 +95,7 @@ patches
 
         constructFrom patches;
 
-        patches (foilInBox_6 foilInBox_7 foilInBox_8);
+        patches (foilInBox_6 foilInBox_7 foilInBox_8 foilInBox_9);
     }
 );
 
