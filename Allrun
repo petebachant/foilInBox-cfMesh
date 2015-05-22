@@ -5,4 +5,4 @@
 runApplication surfaceFeatureEdges constant/triSurface/foilInBox.stl constant/triSurface/foilInBoxFeatureEdges.stl
 runApplication cartesianMesh
 runApplication createPatch -overwrite
-runApplication checkMesh
+runApplication checkMesh -constant
