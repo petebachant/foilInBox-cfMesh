@@ -55,13 +55,24 @@ boundaryLayers
         {
              nLayers	10;
              thicknessRatio	1.2;
-             maxFirstLayerThickness 0.001;
-             allowDiscontinuity 0;
+             // maxFirstLayerThickness 0.001;
+             // allowDiscontinuity 0;
         }
         foilInBox_9
         {
              $foilInBox_6
         }
+    }
+
+    optimiseLayer 1;
+
+    optimisationParameters
+    {
+        nSmoothNormals 3;
+        maxNumIterations 2;
+        featureSizeFactor 0.4;
+        reCalculateNormals 1;
+        relThicknessTol 0.1;
     }
 }
 
